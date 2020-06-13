@@ -1,0 +1,14 @@
+
+.label {
+   padding-top: 3px;
+   padding-bottom: 3px;
+   border-radius: 0!important;
+   border-bottom:0!important;
+   color:#352e63!important;
+    
+}
+.hdSubject,.hdDescription,.hdName,.hdEmailId,.hdMobileNumber{
+    display:none;
+    color:red;
+    text-align: center
+}
