@@ -1,6 +1,6 @@
 # TicketManagementSystem
     Hi, 
-        It is a basic ticket management system application, I have written comments as much as possible for code understanding DB dump is also checked in for instance installation with out trouble  [Base URL](#base-url),Technical Stack,Functionalities, Services are used to implement  with Future Update is mentioned below. Kindly look in to it the column which is mentioned above for each details clearly with more information.
+        It is a basic ticket management system application, I have written comments as much as possible for code understanding DB dump is also checked in for instance installation with out trouble  Base URL,Technical Stack,Functionalities, Services are used to implement  with Future Update is mentioned below. Kindly look in to it the column which is mentioned above for each details clearly with more information.
 
 # Installation 
     1.Kindly clone the repository.
