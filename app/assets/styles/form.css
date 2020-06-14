@@ -1,0 +1,11 @@
+/*Form non-critical*/
+.form-control:focus{ 
+    background-color: unset;
+    color:unset;
+    box-shadow: unset;
+}
+.btn:hover {
+    color: #512dab;
+    background-color:#ccc;
+    text-decoration: none;
+}

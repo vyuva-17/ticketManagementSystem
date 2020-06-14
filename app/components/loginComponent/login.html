@@ -1,12 +1,17 @@
+                                 <!---SignIn Form---->
 <div class="container">
   <form class="form-horizontal"  id='signInForm' name="registration">
     <h3 class="formCaption">Sign In</h2>
       <div class="form-group">
+        <label for="email" class=' label  col-sm-10 col-lg-10 col-md-10'>Email:</label>
+
         <input type="email" class="form-control col-sm-10 col-lg-10 col-md-10" id="email" placeholder="Enter email"
           name="email">
         <div class="hdEmailId col-sm-10 col-lg-10 col-md-10">Enter Valid Email id</div>
       </div>
       <div class="form-group">
+        <label for="password" class=' label col-sm-10 col-lg-10 col-md-10'>Password:</label>
+
         <input type="password" class="form-control col-sm-10 col-lg-10 col-md-10" id="password"
           placeholder="Enter Password" name='password'>
         <div class="hdPassword col-sm-10 col-lg-10 col-md-10">Password is Required</div>
@@ -20,5 +25,8 @@
       </div>
   </form>
 </div>
+<!---preload the current neded resources and prefetch the future navigtion purpose to improve page optimization---->
 <script rel="preload" src="components/loginComponent/login.js" defer as='js'></script>
 <script rel="prefetch" src="components/addTicketComponent/addTicket.js" defer as='js'></script>
+
+                                   <!---End Off-->

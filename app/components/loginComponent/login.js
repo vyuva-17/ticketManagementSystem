@@ -1,4 +1,6 @@
+                               /****************Introduction**************/
 $(document).ready(function () {
+    /*sub call for post the data using fetch api*/
     $('#signInForm').submit(function(e) {
       console.log('e',e);
       e.preventDefault();
@@ -8,9 +10,9 @@ $(document).ready(function () {
       }
     })
   })
+  /* Form Validation */
   function validation() {
     if (emailvalidation() == true) {
-
       if (passwordVlidation() == true) {
         return true;
       } else {
@@ -19,9 +21,8 @@ $(document).ready(function () {
     } else {
       return false;
     }
-
-
   }
+  /*Email Validation*/
   function emailvalidation() {
     if ($('#email').val() == '') {
       $('.hdEmailId').attr('style', 'display:block')
@@ -44,6 +45,7 @@ $(document).ready(function () {
     }
 
   }
+  /* Password Validation*/
   function passwordVlidation() {
     if ($('#password').val() == '') {
       $('.hdPassword').attr('style', 'display:block')
@@ -57,6 +59,7 @@ $(document).ready(function () {
       return true;
     }
   }
+  /* fetch to post the form data using ajax call to avoid page loading while passing and calling the data from server*/
   function postData(){
     const formData  = new FormData(document.getElementById('signInForm'));
     fetch('phpDataHandling/formResponse.php?function=post', {
@@ -79,3 +82,5 @@ $(document).ready(function () {
       location.replace("http://localhost/ticketManagementSystem/app/index.php?addTicket");
     })
   }
+
+                                              /****End Off****/

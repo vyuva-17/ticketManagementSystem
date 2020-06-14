@@ -1,30 +1,33 @@
-<link rel="preload" href="components/addTicketComponent/addTicket.css" onload="this.onload=null;this.rel='stylesheet'"
-    as='style'>
-<link rel="stylesheet" href="components/addTicketComponent/addTicket.css">
+<!--Introduction-->
 <div class="container">
-    <form class="form-horizontal" onsubmit="return validation(this)" id='signInForm' name="registration">
+    <!--addTicketFormValidation-->
+    <form class="form-horizontal" onsubmit="return addTicketValidation(this)" id='signInForm' name="registration">
         <h3 class="formCaption">Ticket</h2>
             <h5 class="formCaption">Ticket Information</h5>
             <div class="form-group">
-                <label for="department" class=' label  form-control col-sm-10 col-lg-10 col-md-10'>Department:</label>
+                <label for="department" class=' label col-sm-10 col-lg-10 col-md-10'>Department:</label>
 
                 <select class="form-control col-sm-10 col-lg-10 col-md-10" id="department" placeholder="Department">
                    
                 </select>
             </div>
             <div class="form-group">
-                <label for="category" class=' label  form-control col-sm-10 col-lg-10 col-md-10'>Category:</label>
+                <label for="category" class=' label   col-sm-10 col-lg-10 col-md-10'>Category:</label>
 
                 <select class="form-control col-sm-10 col-lg-10 col-md-10" id="category" placeholder="Category">
                   
                 </select>
             </div>
             <div class="form-group">
+                <label for="subject" class=' label   col-sm-10 col-lg-10 col-md-10'>Subject:</label>
+
                 <input type="text" class="form-control col-sm-10 col-lg-10 col-md-10" id="subject"
                     placeholder="Enter Subject" name="subject">
                 <div class="hdSubject col-sm-10 col-lg-10 col-md-10">Subject is Mandatory</div>
             </div>
             <div class="form-group">
+                <label for="comment" class=' label   col-sm-10 col-lg-10 col-md-10'>Description:</label>
+
                 <textarea class="form-control col-sm-10 col-lg-10 col-md-10" rows="5" id="comment"
                     placeholder="Enter Description"></textarea>
                 <div class="hdDescription col-sm-10 col-lg-10 col-md-10">Description is Mandatory</div>
@@ -32,12 +35,15 @@
             </div>
             <h5 class="formCaption">Contact Details</h5>
             <div class="form-group">
+                <label for="name" class=' label   col-sm-10 col-lg-10 col-md-10'>Name:</label>
+
                 <input type="text" class="form-control col-sm-10 col-lg-10 col-md-10" id="name" placeholder="Enter Name"
                     name='name'>
                 <div class="hdName col-sm-10 col-lg-10 col-md-10">Name is Required</div>
 
             </div>
             <div class="form-group">
+                <label for="email" class=' label   col-sm-10 col-lg-10 col-md-10'>Email:</label>
 
                 <input type="email" class="form-control col-sm-10 col-lg-10 col-md-10" id="email"
                     placeholder="Enter email" name="email">
@@ -45,6 +51,8 @@
             </div>
 
             <div class="form-group">
+                <label for="mobileNumber" class=' label   col-sm-10 col-lg-10 col-md-10'>Mobile Number:</label>
+
                 <input type="number" class="form-control col-sm-10 col-lg-10 col-md-10" id="mobileNumber"
                     placeholder="Enter Mobile Number" name='mobileNumber'>
                 <div class="hdMobileNumber col-sm-10 col-lg-10 col-md-10">Mobile Number is Required</div>
@@ -52,7 +60,7 @@
             </div>
             <h5 class="formCaption">Additional Info Details</h5>
             <div class="form-group">
-                <label for="priority" class=' form-control label col-sm-10 col-lg-10 col-md-10'>Priority:</label>
+                <label for="priority" class='label col-sm-10 col-lg-10 col-md-10'>Priority:</label>
 
                 <select class="form-control col-sm-10 col-lg-10 col-md-10" id="priority" placeholder="priority">
                     
@@ -66,4 +74,5 @@
             </div>
     </form>
 </div>
+<!---preloaded and defered the js for optimization purpose-->
 <script rel="preload" src="components/addTicketComponent/addTicket.js" defer as='js'></script>
