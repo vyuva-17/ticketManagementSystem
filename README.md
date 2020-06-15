@@ -57,5 +57,5 @@
         http://localhost/ticketManagementSystem/app/phpDataHandling/formResponse.php?function=getPriorityData
 
 # Update
-   Add ticket and ticket list service integration.
+   Add ticket and ticket list service integration updte is completed
      
