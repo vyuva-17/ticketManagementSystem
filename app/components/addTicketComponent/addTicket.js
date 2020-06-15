@@ -50,6 +50,7 @@ $(document).ready(function () {
 /*form validation on submit */
 function addTicketValidation() {
     if (mandatoryValidation() == true) {
+        postAddTicket();
         return true;
     } else {
         return false;
@@ -66,7 +67,7 @@ function mandatoryValidation() {
             return false;
         }
         else if (i == fieldArrayId.length - 1) {
-            return false;
+            return true;
         }
     }
 
@@ -93,4 +94,36 @@ function getMasterDataJson(url, localStorageName) {
             console.error('some thing went wrong!!')
         })
 }
+/* fetch to post the form data using ajax call to avoid page loading while passing and calling the data from server*/
+function postAddTicket(){
+    const formData  = new FormData(document.getElementById('addTicketForm'));
+    return fetch('phpDataHandling/formResponse.php?function=createTicket', {
+      method: 'POST',
+      body: formData
+    })
+    .then(fetchResponse=>{
+      if(!fetchResponse.ok){
+        console.error('Check Respone');
+      }
+      console.log("formData",formData);
+      return fetchResponse;
+    })
+    .then(validResponse=>{
+      return validResponse.json();
+    })
+    .then(loginResponse=>{
+      console.log('Response',loginResponse);
+      localStorage.setItem('addTicketResponse',JSON.stringify(loginResponse))
+
+      if(loginResponse.message=='The data is invalid due to validation restrictions'){
+          alert('Ticket is not created,'+loginResponse.message+loginResponse.errors[0].fieldName);
+          location.replace("http://localhost/ticketManagementSystem/app/index.php?addTicket");
+        } else{
+          alert('Ticket is created sucessfully');
+          location.replace("http://localhost/ticketManagementSystem/app/index.php?listTicket");
+
+      }
+    })
+  }
+
                                    /*******End Off*******/

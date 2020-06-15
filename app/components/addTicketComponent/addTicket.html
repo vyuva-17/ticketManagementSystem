@@ -1,20 +1,20 @@
 <!--Introduction-->
 <div class="container">
     <!--addTicketFormValidation-->
-    <form class="form-horizontal" onsubmit="return addTicketValidation(this)" id='signInForm' name="registration">
+    <form class="form-horizontal" onsubmit="return addTicketValidation(this)" id='addTicketForm' name="registration">
         <h3 class="formCaption">Ticket</h2>
             <h5 class="formCaption">Ticket Information</h5>
             <div class="form-group">
                 <label for="department" class=' label col-sm-10 col-lg-10 col-md-10'>Department:</label>
 
-                <select class="form-control col-sm-10 col-lg-10 col-md-10" id="department" placeholder="Department">
+                <select class="form-control col-sm-10 col-lg-10 col-md-10" name='department' id="department" placeholder="Department">
                    
                 </select>
             </div>
             <div class="form-group">
                 <label for="category" class=' label   col-sm-10 col-lg-10 col-md-10'>Category:</label>
 
-                <select class="form-control col-sm-10 col-lg-10 col-md-10" id="category" placeholder="Category">
+                <select class="form-control col-sm-10 col-lg-10 col-md-10" name='category' id="category" placeholder="Category">
                   
                 </select>
             </div>
@@ -29,7 +29,7 @@
                 <label for="comment" class=' label   col-sm-10 col-lg-10 col-md-10'>Description:</label>
 
                 <textarea class="form-control col-sm-10 col-lg-10 col-md-10" rows="5" id="comment"
-                    placeholder="Enter Description"></textarea>
+                    placeholder="Enter Description" name='description'></textarea>
                 <div class="hdDescription col-sm-10 col-lg-10 col-md-10">Description is Mandatory</div>
 
             </div>
@@ -62,7 +62,7 @@
             <div class="form-group">
                 <label for="priority" class='label col-sm-10 col-lg-10 col-md-10'>Priority:</label>
 
-                <select class="form-control col-sm-10 col-lg-10 col-md-10" id="priority" placeholder="priority">
+                <select class="form-control col-sm-10 col-lg-10 col-md-10" name='priority' id="priority" placeholder="priority">
                     
                 </select>
             </div>

@@ -108,7 +108,12 @@ session_start();
         margin: 0 auto !important;
         width: 1300px !important;
       }
-
+      .container-list {
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+        width: 1300px !important;
+      }
       .h3 {
         font-size: larger;
         min-width: 68% !important;
@@ -249,7 +254,7 @@ session_start();
     .footer {
       background-color: #512dab !important;
       color: #ffffff;
-      position: sticky;
+      position: fixed;
       left: 0;
       right: 0;
       bottom: 0;
@@ -262,6 +267,12 @@ session_start();
     /*container inlined css for dynamic rendering content*/ 
     .container {
       display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3% !important;
+      margin-bottom: 3% !important;
+    }
+    .container-list {
       align-items: center;
       justify-content: center;
       margin-top: 3% !important;

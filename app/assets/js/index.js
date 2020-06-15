@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     }
     $('.buttomIcon').attr('style', 'display :none!important')
-  }
+  } 
 }); 
 /****** Local Storage clearing *****/
 /*It will clear the localStorage*/
