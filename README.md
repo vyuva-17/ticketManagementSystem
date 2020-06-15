@@ -37,6 +37,7 @@
     12. Db configuration need to change in config.ini under config folder call the defined variables for DB Configuration Management.
     13. To Avoid Sql Query Injection I have called the db constants instead of db details. 
     14. Base URL Redirection is also implemented 
+    15. Zoho Desc API Add Ticket, List All Tickets integration is executed in php to run curl and fetch response fetched response is pased to js and render the data
 
 # services
 
@@ -55,7 +56,15 @@
     4. Priority Master Detils Service: 
         
         http://localhost/ticketManagementSystem/app/phpDataHandling/formResponse.php?function=getPriorityData
+        
+    5. Zoho Desc Add Ticket API Curl Execution Service:
+    
+         http://localhost/ticketManagementSystem/app/phpDataHandling/formResponse.php?function=addTicket
+         
+    6. Zoho Desc List All Tickets API Curl Execution Service:
+    
+         http://localhost/ticketManagementSystem/app/phpDataHandling/formResponse.php?function=listTicket
 
 # Update
-   Add ticket and ticket list service integration updte is completed
+   Add ticket and ticket list service integration update is completed check releases for updated version.
      
