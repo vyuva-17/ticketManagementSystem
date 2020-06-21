@@ -19,8 +19,9 @@
 
 
 # Technical Stack
-    Back-End --> Lamp stack is used. 
-    Front-End --> Bootstrap-v4.5.0,jquery-v3.5.1,Html,CSS,Javascript used.
+   Lamp Stack:
+      Back-End --> Core PHP and  MySQL is used. 
+      Front-End --> Bootstrap-v4.5.0,jquery-v3.5.1,Html,CSS,Javascript used.
 
 # Functionalities Implemented
     1. Responsiveness.
